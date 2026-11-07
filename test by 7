@@ -1,0 +1,43 @@
+local player = game.Players.LocalPlayer
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "SevenGui"
+gui.ResetOnSpawn = false
+gui.Parent = player:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 350, 0, 420)
+frame.Position = UDim2.new(0.5, -175, 0.5, -210)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.BorderSizePixel = 0
+frame.Parent = gui
+
+-- TOP TEXT
+local top = Instance.new("TextLabel")
+top.Size = UDim2.new(1, 0, 0, 55)
+top.BackgroundTransparency = 1
+top.Text = "MADE BY 7"
+top.TextColor3 = Color3.new(1, 1, 1)
+top.TextScaled = true
+top.Font = Enum.Font.GothamBlack
+top.Parent = frame
+
+-- IMAGE
+local image = Instance.new("ImageLabel")
+image.Size = UDim2.new(1, -20, 0, 260)
+image.Position = UDim2.new(0, 10, 0, 60)
+image.BackgroundTransparency = 1
+image.Image = "rbxassetid://YOUR_IMAGE_ID"
+image.ScaleType = Enum.ScaleType.Fit
+image.Parent = frame
+
+-- BOTTOM TEXT
+local bottom = Instance.new("TextLabel")
+bottom.Size = UDim2.new(1, 0, 0, 90)
+bottom.Position = UDim2.new(0, 0, 0, 325)
+bottom.BackgroundTransparency = 1
+bottom.Text = "MADE BY 7 U STUPID LITTILE NIGGER"
+bottom.TextColor3 = Color3.new(1, 1, 1)
+bottom.TextScaled = true
+bottom.Font = Enum.Font.GothamBlack
+bottom.Parent = frame
